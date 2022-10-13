@@ -1,0 +1,70 @@
+{
+	"ts-node": {
+		"transpileOnly": true,
+		"files": true,
+		"require": ["./tsconfig-paths-bootstrap.js", "dotenv/config"]
+	},
+	"compilerOptions": {
+		"lib": ["es2020"],
+		"module": "commonjs",
+		"target": "es2020",
+		"strict": false,
+		"sourceMap": true,
+		"outDir": "/app/dist",
+		"esModuleInterop": true,
+		"pretty": true,
+		"noImplicitAny": false,
+		"strictNullChecks": true,
+		"experimentalDecorators": true,
+		"baseUrl": "./src",
+		"emitDecoratorMetadata": true,
+		"declaration": false,
+		"incremental": false,
+		"allowJs": true,
+		"resolveJsonModule": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"plugins": [
+			{ "transform": "typescript-transform-paths" },
+			{ "transform": "typescript-transform-paths", "afterDeclarations": true },
+			{
+				"transform": "ts-auto-mock/transformer",
+				"cacheBetweenTests": false
+			}
+		],
+		"types": ["jest"],
+		"typeRoots": ["./src/@types", "./node_modules/@types"],
+		"paths": {
+			"@schema/*": ["./schema/*"],
+			"@log": ["./logger"],
+			"@config": ["./Configuration"],
+			"@app-config": ["./libs/app-config"],
+			"@app-config-azure-appconfiguration": [
+				"./libs/app-config-azure-appconfiguration"
+			],
+			"@ghl/*": ["./schema/*"],
+			"@app-config-yaml": ["./libs/app-config-yaml"],
+			"@app-config-awsconfig": ["./libs/app-config-awsconfig"],
+			"@app-log": ["./libs/app-log"],
+			"@app-middlewares": ["./libs/app-middlewares"],
+			"@app-log-pinno": ["./libs/app-log-pinno"],
+			"@services/*": ["./services/*"],
+			"@utils/*": ["./utils/*"],
+			"@ioc": ["./IoC"],
+			"@http-client": ["./libs/http-client"],
+			"@http-soap": ["./libs/http-soap"],
+			"@app-inversify": ["./libs/app-inversify"],
+			"@http-resiliency": ["./libs/http-resiliency"],
+			"@app-api/*": ["./libs/app-api/*"],
+			"@app-context-manager": ["./libs/app-context-manager"],
+			"@app-cache-redis": ["./libs/app-cache-redis"],
+			"@app-cache-memory": ["./libs/app-cache-memory"],
+			"@open-telemetry-express-metrics": [
+				"./libs/open-telemetry-express-metrics"
+			]
+		}
+	},
+	"exclude": ["node_modules", "dist", "coverage", "docker"],
+	"include": ["app/src/**/*"],
+	"references": [{ "path": "../tsconfig.json" }]
+}

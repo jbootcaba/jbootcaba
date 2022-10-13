@@ -1,0 +1,22 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "App",
+			"type": "node",
+			"request": "launch",
+			"timeout": 500,
+			"restart": true,
+			"runtimeExecutable": "${workspaceRoot}/node_modules/.bin/nodemon",
+			"args": ["src/index.ts"],
+			"cwd": "${workspaceRoot}",
+			"outputCapture": "std",
+			"internalConsoleOptions": "neverOpen",
+			"console": "integratedTerminal",
+			"skipFiles": ["<node_internals>/**", "node_modules/**"],
+			"env": {
+				"TS_NODE_PROJECT": "${workspaceFolder}/tsconfig.json"
+			}
+		}
+	]
+}

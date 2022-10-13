@@ -1,0 +1,16 @@
+{
+	"name": "@jbootcaba/core",
+	"version": "1.0.0",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"license": "MIT",
+	"files": [
+		"/dist"
+	],
+	"scripts": {
+		"build": "tsc --build"
+	},
+	"dependencies": {
+		"typescript": "^4.8.4"
+	}
+}

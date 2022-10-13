@@ -1,0 +1,12 @@
+{
+	"exec": "ts-node",
+	"watch": ["src/"],
+	"ignore": ["src/routes/*"],
+	"ext": "ts",
+	"execMap": {
+		"ts": "ts-node"
+	},
+	"verbose": true,
+	"restartable": "rs",
+	"signal": "SIGTERM"
+}

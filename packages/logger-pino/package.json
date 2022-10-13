@@ -1,0 +1,24 @@
+{
+	"name": "@jbootcaba/logger-pino",
+	"version": "1.0.0",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"license": "MIT",
+	"files": [
+		"/dist"
+	],
+	"scripts": {
+		"build": "tsc --build"
+	},
+	"dependencies": {
+		"@jbootcaba/core": "1.0.0",
+		"cockatiel": "^3.0.0",
+		"pino-elasticsearch": "^6.2.0",
+		"pino-pretty": "^9.1.1",
+		"type-fest": "^3.0.0",
+		"typescript": "^4.8.4"
+	},
+	"devDependencies": {
+		"@types/pino": "^7.0.5"
+	}
+}

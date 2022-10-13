@@ -1,0 +1,26 @@
+{
+	"recommendations": [
+		"kisstkondoros.vscode-codemetrics",
+		"nidu.copy-json-path",
+		"irongeek.vscode-env",
+		"eamodio.gitlens",
+		"mhutchie.git-graph",
+		"orta.vscode-jest",
+		"quicktype.quicktype",
+		"ghmcadams.lintlens",
+		"folke.vscode-monorepo-workspace",
+		"stringham.move-ts",
+		"christian-kohler.npm-intellisense",
+		"christian-kohler.path-intellisense",
+		"rvest.vs-code-prettier-eslint",
+		"marclipovsky.string-manipulation",
+		"hbenl.vscode-test-explorer",
+		"zerefdev.todo-highlighter",
+		"loiane.ts-extension-pack",
+		"monokai.theme-monokai-pro-vscode",
+		"pkief.material-icon-theme",
+		"redhat.vscode-xml",
+		"esbenp.prettier-vscode",
+		"dbaeumer.vscode-eslint"
+	]
+}
