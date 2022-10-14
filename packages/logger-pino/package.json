@@ -1,17 +1,19 @@
 {
 	"name": "@jbootcaba/logger-pino",
 	"version": "1.0.0",
-	"main": "dist/index.js",
-	"types": "dist/index.d.ts",
+	"main": "src/index.ts",
+	"types": "src/index.ts",
 	"license": "MIT",
 	"files": [
 		"/dist"
 	],
 	"scripts": {
-		"build": "tsc --build"
+		"build:clean": "rimraf dist/*",
+		"build:esbuild": "ts-node ./build.ts",
+		"build": "npm-run-all build:clean build:esbuild"
 	},
 	"dependencies": {
-		"@jbootcaba/core": "1.0.0",
+		"@jbootcaba/core": "*",
 		"cockatiel": "^3.0.0",
 		"pino-elasticsearch": "^6.2.0",
 		"pino-pretty": "^9.1.1",

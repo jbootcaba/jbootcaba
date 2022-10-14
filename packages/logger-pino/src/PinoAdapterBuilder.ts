@@ -49,11 +49,19 @@ export const PinoElasticSearchAdapterBuilder = (
 	return new PinoAdapter(logger);
 };
 
+const mergeObject = <T>(A, B): T => {
+	let res: any = {};
+	Object.keys({ ...A, ...B }).map((key) => {
+		res[key] = B[key] || A[key];
+	});
+	return res;
+};
+
 export const PinoAdapterBuilder = (
 	configuration?: LoggerPinoConfig
 ): ILoggerAdapter => {
 	const prettyStream = defaultTransporter();
-	const pinoConfig = Object.assign(
+	const pinoConfig = mergeObject<LoggerPinoConfig>(
 		{
 			level: LogLevel.info,
 			pretty: false,

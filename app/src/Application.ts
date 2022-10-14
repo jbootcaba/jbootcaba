@@ -12,13 +12,13 @@ import {
 	HttpServer,
 } from "@jbootcaba/express";
 import { Express } from "express";
-import { LoggerFactory } from "jbootcaba";
+import { LoggerFactory } from "@jbootcaba/seed/logger";
+import { GraphQlRegister } from "./utils/graphql/RegisterGraphql";
 import { RegisterDocs } from "./docs";
 import { TYPES } from "./utils/TYPES";
 import { RegisterRoutes } from "./routes/routes";
 import { Configuration } from "./configs/Configuration";
 import "./controllers";
-import { GraphQlRegister } from "./utils/graphql/RegisterGraphql";
 import {
 	createRateLimiter,
 	ContextFiller,

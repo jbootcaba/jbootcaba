@@ -1,10 +1,12 @@
 {
 	"extends": "../tsconfig.libs.json",
 	"compilerOptions": {
+		"allowSyntheticDefaultImports": true,
 		"outDir": "dist",
 		"rootDir": "src",
 		"baseUrl": "./"
 	},
+	"typeRoots": ["./src/@types", "node_modules/@types", "node"],
 	"paths": {
 		"@jbootcaba/context": ["../context"]
 	},

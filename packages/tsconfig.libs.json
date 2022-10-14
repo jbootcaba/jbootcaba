@@ -4,9 +4,14 @@
 		"declaration": true,
 		"declarationMap": true,
 		"emitDecoratorMetadata": true,
-		"module": "commonjs",
-		"noEmit": false,
-		"composite": true
+		"forceConsistentCasingInFileNames": true,
+		"isolatedModules": false,
+		"skipLibCheck": true,
+		"moduleResolution": "node",
+		"preserveWatchOutput": true,
+		"composite": true,
+		"noEmit": true,
+		"strict": true
 	},
 	"files": []
 }

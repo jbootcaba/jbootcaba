@@ -1,0 +1,72 @@
+{
+	"name": "@jbootcaba/seed",
+	"version": "1.0.0",
+	"main": "src/index.ts",
+	"types": "src/index.ts",
+	"license": "MIT",
+	"exports": {
+		".": {
+			"default": {
+				"require": "./dist/index.js",
+				"default": "./index.ts"
+			}
+		},
+		"./logger": {
+			"require": "./dist/index.js",
+			"default": "./src/logger/index.ts"
+		},
+		"./inversify": {
+			"require": "./dist/index.js",
+			"default": "./src/inversify/index.ts"
+		},
+		"./http": {
+			"require": "./dist/http.js",
+			"default": "./src/http/index.ts"
+		},
+		"./context": {
+			"require": "./dist/context.js",
+			"default": "./src/context/index.ts"
+		},
+		"./resiliency": {
+			"require": "./dist/resiliency.js",
+			"default": "./src/resiliency/index.ts"
+		},
+		"./config": {
+			"require": "./dist/config.js",
+			"default": "./src/config/index.ts"
+		}
+	},
+	"typesVersions": {
+		"*": {
+			"inversify": [
+				"./src/index.ts"
+			],
+			"logger": [
+				"./src/index.ts"
+			],
+			"config": [
+				"./src/index.ts"
+			],
+			"resiliency": [
+				"./src/index.ts"
+			],
+			"context": [
+				"./src/index.ts"
+			],
+			"http": [
+				"./src/index.ts"
+			]
+		}
+	},
+	"files": [
+		"/dist"
+	],
+	"scripts": {
+		"build:clean": "rimraf dist/*",
+		"build:esbuild": "ts-node ./build.ts",
+		"build": "npm-run-all build:clean build:esbuild"
+	},
+	"dependencies": {
+		"@jbootcaba/inversify": "*"
+	}
+}

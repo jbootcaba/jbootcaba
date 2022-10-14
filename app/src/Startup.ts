@@ -1,11 +1,12 @@
 import "reflect-metadata";
 import "@utils/tracer/instrumentation";
 import { Configuration, ConfigurationSchema } from "./configs/Configuration";
-import { StartupBuilder } from "jbootcaba";
-import { ConfigureServices } from "./ConfigureServices";
+import { StartupBuilder } from "@jbootcaba/seed/inversify";
 import { RunApplication } from "./Application";
 import { PinoAdapterBuilder } from "@jbootcaba/logger-pino";
 import { context, isSpanContextValid, trace } from "@opentelemetry/api";
+import "./services/AuthService";
+import { ConfigureServices } from "./ConfigureServices";
 
 const injectTrace = () => {
 	const record = {};

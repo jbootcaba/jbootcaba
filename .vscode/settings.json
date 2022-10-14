@@ -3,6 +3,7 @@
 	"npm.packageManager": "yarn",
 	"jest.jestCommandLine": "./node_modules/.bin/jest",
 	"editor.formatOnSave": true,
+	"files.eol": "\n",
 	"editor.codeActionsOnSave": {
 		"source.fixAll.eslint": true
 	},

@@ -1,14 +1,16 @@
 {
 	"name": "@jbootcaba/core",
 	"version": "1.0.0",
-	"main": "dist/index.js",
-	"types": "dist/index.d.ts",
+	"main": "src/index.ts",
+	"types": "src/index.ts",
 	"license": "MIT",
 	"files": [
 		"/dist"
 	],
 	"scripts": {
-		"build": "tsc --build"
+		"build:clean": "rimraf dist/*",
+		"build:esbuild": "ts-node ./build.ts",
+		"build": "npm-run-all build:clean build:esbuild"
 	},
 	"dependencies": {
 		"typescript": "^4.8.4"
