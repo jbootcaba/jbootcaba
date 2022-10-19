@@ -1,5 +1,5 @@
 {
-	"name": "@jbootcaba/seed",
+	"name": "jbootcaba",
 	"version": "1.0.0",
 	"main": "src/index.ts",
 	"types": "src/index.ts",
@@ -67,6 +67,18 @@
 		"build": "npm-run-all build:clean build:esbuild"
 	},
 	"dependencies": {
-		"@jbootcaba/inversify": "*"
+		"@jbootcaba/config": "*",
+		"@jbootcaba/context": "*",
+		"@jbootcaba/core": "*",
+		"@jbootcaba/express": "*",
+		"@jbootcaba/helpers": "*",
+		"@jbootcaba/http": "*",
+		"@jbootcaba/inversify": "*",
+		"@jbootcaba/logger": "*",
+		"@jbootcaba/logger-pino": "*",
+		"@jbootcaba/resiliency": "*"
+	},
+	"devDependencies": {
+		"esbuild-node-externals": "^1.5.0"
 	}
 }

@@ -1,10 +1,12 @@
 import { build } from "esbuild";
 import { pnpPlugin } from "@yarnpkg/esbuild-plugin-pnp";
+import { nodeExternalsPlugin } from "esbuild-node-externals";
 
 build({
-	plugins: [pnpPlugin()],
+	plugins: [pnpPlugin(), nodeExternalsPlugin({ allowList: ["@jbootcaba/*"] })],
 	bundle: true,
 	entryPoints: ["src/index.ts"],
+	external: ["../../node_modules/*"],
 	// external: ["axios/lib/adapters/http"],
 	// external: ["./node_modules/*"],
 	// external: ["aws-sdk", "mock-aws-s3", "testcontainers"], // mock-aws-s3 from s3 template, testcontainers from dynamodb template

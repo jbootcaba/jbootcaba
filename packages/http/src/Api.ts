@@ -1,7 +1,6 @@
 import { ContextManager } from "@jbootcaba/context";
 import axios, { AxiosInstance, AxiosRequestConfig, AxiosPromise } from "axios";
 import httpAdapter from "axios/lib/adapters/http";
-//import { httpAdapter } from "axios/dist/node/axios.cjs";
 import { IInterceptor } from "./IInterceptor";
 /**
  * ES6 Axios Class.

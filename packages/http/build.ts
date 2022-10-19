@@ -1,8 +1,9 @@
 import { build } from "esbuild";
 import { pnpPlugin } from "@yarnpkg/esbuild-plugin-pnp";
+import { nodeExternalsPlugin } from "esbuild-node-externals";
 
 build({
-	plugins: [pnpPlugin()],
+	plugins: [pnpPlugin(), nodeExternalsPlugin({ allowList: ["@jbootcaba/*"] })],
 	bundle: true,
 	entryPoints: ["src/index.ts"],
 	// external: ["./node_modules/*"],

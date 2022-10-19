@@ -9,7 +9,6 @@ import { ApiContainerModule } from "@jbootcaba/helpers";
 export const ConfigureServices = async (
 	container: Container
 ): Promise<void> => {
-	console.log(container);
 	const config = container.get<Configuration>(TYPES.Configuration);
 
 	registerTracer(config);

@@ -13,6 +13,10 @@
 		"build": "npm-run-all build:clean build:esbuild"
 	},
 	"dependencies": {
-		"@jbootcaba/inversify": "*"
+		"@jbootcaba/http": "*",
+		"@jbootcaba/inversify": "*",
+		"@jbootcaba/resiliency": "*",
+		"inversify": "^6.0.1",
+		"type-fest": "^3.1.0"
 	}
 }

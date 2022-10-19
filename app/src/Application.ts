@@ -12,7 +12,7 @@ import {
 	HttpServer,
 } from "@jbootcaba/express";
 import { Express } from "express";
-import { LoggerFactory } from "@jbootcaba/seed/logger";
+import { LoggerFactory } from "jbootcaba/logger";
 import { GraphQlRegister } from "./utils/graphql/RegisterGraphql";
 import { RegisterDocs } from "./docs";
 import { TYPES } from "./utils/TYPES";
