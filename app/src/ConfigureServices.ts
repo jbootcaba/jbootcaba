@@ -4,7 +4,7 @@ import { Controller } from "tsoa";
 import { Configuration } from "./configs/Configuration";
 import { TYPES } from "./utils/TYPES";
 import { registerTracer } from "./utils/tracer/tracer";
-import { ApiContainerModule } from "@jbootcaba/helpers";
+import { ApiContainerModule } from "jbootcaba/helpers";
 
 export const ConfigureServices = async (
 	container: Container

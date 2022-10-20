@@ -9,6 +9,19 @@
 		"build:esbuild": "ts-node ./build.ts",
 		"build": "npm-run-all build:clean build:esbuild"
 	},
+	"exports": {
+		".": {
+			"require": "./dist/index.js",
+			"default": "./src/index.ts"
+		}
+	},
+	"typesVersions": {
+		"*": {
+			"*": [
+				"./src/index.ts"
+			]
+		}
+	},
 	"files": [
 		"/dist"
 	],

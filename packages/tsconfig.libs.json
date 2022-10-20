@@ -10,7 +10,6 @@
 		"moduleResolution": "node",
 		"preserveWatchOutput": true,
 		"composite": true,
-		"noEmit": true,
 		"strict": true
 	},
 	"files": []

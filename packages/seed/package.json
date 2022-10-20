@@ -5,55 +5,16 @@
 	"types": "src/index.ts",
 	"license": "MIT",
 	"exports": {
-		".": {
+		"./*": {
 			"default": {
 				"require": "./dist/index.js",
-				"default": "./index.ts"
+				"default": "./src/index.ts"
 			}
-		},
-		"./logger": {
-			"require": "./dist/index.js",
-			"default": "./src/logger/index.ts"
-		},
-		"./inversify": {
-			"require": "./dist/index.js",
-			"default": "./src/inversify/index.ts"
-		},
-		"./http": {
-			"require": "./dist/http.js",
-			"default": "./src/http/index.ts"
-		},
-		"./context": {
-			"require": "./dist/context.js",
-			"default": "./src/context/index.ts"
-		},
-		"./resiliency": {
-			"require": "./dist/resiliency.js",
-			"default": "./src/resiliency/index.ts"
-		},
-		"./config": {
-			"require": "./dist/config.js",
-			"default": "./src/config/index.ts"
 		}
 	},
 	"typesVersions": {
 		"*": {
-			"inversify": [
-				"./src/index.ts"
-			],
-			"logger": [
-				"./src/index.ts"
-			],
-			"config": [
-				"./src/index.ts"
-			],
-			"resiliency": [
-				"./src/index.ts"
-			],
-			"context": [
-				"./src/index.ts"
-			],
-			"http": [
+			"*": [
 				"./src/index.ts"
 			]
 		}
@@ -62,22 +23,12 @@
 		"/dist"
 	],
 	"scripts": {
+		"build:declaration": "tsc --emitDeclarationOnly",
 		"build:clean": "rimraf dist/*",
 		"build:esbuild": "ts-node ./build.ts",
 		"build": "npm-run-all build:clean build:esbuild"
 	},
-	"dependencies": {
-		"@jbootcaba/config": "*",
-		"@jbootcaba/context": "*",
-		"@jbootcaba/core": "*",
-		"@jbootcaba/express": "*",
-		"@jbootcaba/helpers": "*",
-		"@jbootcaba/http": "*",
-		"@jbootcaba/inversify": "*",
-		"@jbootcaba/logger": "*",
-		"@jbootcaba/logger-pino": "*",
-		"@jbootcaba/resiliency": "*"
-	},
+	"dependencies": {},
 	"devDependencies": {
 		"esbuild-node-externals": "^1.5.0"
 	}

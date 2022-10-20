@@ -1,0 +1,1 @@
+{"version":3,"file":"RetryPolicy.d.ts","sourceRoot":"","sources":["RetryPolicy.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,OAAO,EAAE,MAAM,iBAAiB,CAAC;AAC1C,OAAO,EAGN,MAAM,EAEN,MAAM,WAAW,CAAC;AAEnB,MAAM,WAAW,WAAW;IAC3B,QAAQ,EAAE,MAAM,CAAC;CACjB;AAED,eAAO,MAAM,WAAW,mBACP,MAAM,UACd,WAAW,UACX,OAAO,oCAqBf,CAAC"}

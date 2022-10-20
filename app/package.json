@@ -31,11 +31,6 @@
 		"node": ">=16"
 	},
 	"dependencies": {
-		"@jbootcaba/express": "*",
-		"@jbootcaba/helpers": "*",
-		"@jbootcaba/inversify": "*",
-		"@jbootcaba/resiliency": "*",
-		"@jbootcaba/logger-pino": "*",
 		"jbootcaba": "*",
 		"@opentelemetry/auto-instrumentations-node": "^0.33.1",
 		"@opentelemetry/exporter-metrics-otlp-http": "^0.33.0",

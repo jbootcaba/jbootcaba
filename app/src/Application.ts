@@ -10,7 +10,7 @@ import {
 	unhandledError,
 	createContextMiddleware,
 	HttpServer,
-} from "@jbootcaba/express";
+} from "jbootcaba/express";
 import { Express } from "express";
 import { LoggerFactory } from "jbootcaba/logger";
 import { GraphQlRegister } from "./utils/graphql/RegisterGraphql";
