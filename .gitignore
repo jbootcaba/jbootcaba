@@ -139,3 +139,4 @@ docker
 schema.gql
 .reports
 .env*
+.yarn

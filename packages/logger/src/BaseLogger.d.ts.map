@@ -1,1 +1,0 @@
-{"version":3,"file":"BaseLogger.d.ts","sourceRoot":"","sources":["BaseLogger.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,OAAO,EAAE,QAAQ,EAAE,MAAM,iBAAiB,CAAC;AAEpD,MAAM,WAAW,cAAc;IAC9B,WAAW,CAAC,KAAK,EAAE,QAAQ,GAAG,IAAI,CAAC;IACnC,QAAQ,CAAC,KAAK,EAAE,MAAM,GAAG,OAAO,CAAC;CACjC"}
