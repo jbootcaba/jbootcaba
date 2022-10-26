@@ -8,7 +8,7 @@
 		"./*": {
 			"default": {
 				"require": "./dist/index.js",
-				"default": "./src/index.ts"
+				"default": "./dist/index.d.ts"
 			}
 		}
 	},
@@ -26,9 +26,19 @@
 		"build:declaration": "tsc --emitDeclarationOnly",
 		"build:clean": "rimraf dist/*",
 		"build:esbuild": "ts-node ./build.ts",
-		"build": "npm-run-all build:clean build:esbuild"
+		"build": "npm-run-all build:clean build:esbuild build:declaration"
 	},
-	"dependencies": {},
+	"dependencies": {
+		"@jbootcaba/core": "*",
+		"@jbootcaba/config": "*",
+		"@jbootcaba/express": "*",
+		"@jbootcaba/helpers": "*",
+		"@jbootcaba/resiliency": "*",
+		"@jbootcaba/logger-pino": "*",
+		"@jbootcaba/logger": "*",
+		"@jbootcaba/inversify": "*",
+		"@jbootcaba/http": "*"
+	},
 	"devDependencies": {
 		"esbuild-node-externals": "^1.5.0"
 	}

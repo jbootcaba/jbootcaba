@@ -1,12 +1,10 @@
 {
-	"extends": "../tsconfig.libs.json",
+	"extends": "../../tsconfig.json",
 	"compilerOptions": {
-		"resolveJsonModule": true,
-		"esModuleInterop": true,
 		"outDir": "dist",
-		"rootDir": "src",
-		"baseUrl": "./"
+		"declarationDir": "./types",
+		"baseUrl": "./src"
 	},
-	"include": ["src/**/*"],
+	"include": ["src/**/*", "types/**/*"],
 	"exclude": ["node_modules", "**/__tests__/*", "**/__e2e__/*"]
 }

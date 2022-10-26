@@ -10,6 +10,13 @@
 		// "emitDecoratorMetadata": true,         /* Enables experimental support for emitting type metadata for decorators. */
 		"composite": true,
 		/* Advanced Options */
-		"forceConsistentCasingInFileNames": true
+		"forceConsistentCasingInFileNames": true,
+		"declaration": true,
+		"declarationMap": true,
+		"emitDecoratorMetadata": true,
+		"isolatedModules": false,
+		"skipLibCheck": true,
+		"moduleResolution": "node",
+		"preserveWatchOutput": true
 	}
 }

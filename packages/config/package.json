@@ -2,12 +2,13 @@
 	"name": "@jbootcaba/config",
 	"version": "1.0.0",
 	"main": "src/index.ts",
-	"types": "src/index.ts",
+	"types": "dist/index.d.ts",
 	"license": "MIT",
 	"scripts": {
+		"build:declaration": "tsc --emitDeclarationOnly",
 		"build:clean": "rimraf dist/*",
 		"build:esbuild": "ts-node ./build.ts",
-		"build": "npm-run-all build:clean build:esbuild"
+		"build": "npm-run-all build:clean build:esbuild build:declaration"
 	},
 	"exports": {
 		".": {

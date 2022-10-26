@@ -1,9 +1,9 @@
 {
-	"extends": "../tsconfig.libs.json",
+	"extends": "../../tsconfig.json",
 	"compilerOptions": {
 		"outDir": "dist",
-		"rootDir": "src",
-		"baseUrl": "./",
+		"declarationDir": "./dist/types",
+		"baseUrl": "./src",
 		"paths": {
 			"@jbootcaba/core": ["../core"],
 			"@jbootcaba/config": ["../config"],
@@ -18,5 +18,17 @@
 		}
 	},
 	"include": ["src/**/*", "./package.json"],
-	"exclude": ["node_modules", "**/__tests__/*", "**/__e2e__/*"]
+	"exclude": ["node_modules", "**/__tests__/*", "**/__e2e__/*"],
+	"references": [
+		{ "path": "../core" },
+		{ "path": "../config" },
+		{ "path": "../context" },
+		{ "path": "../express" },
+		{ "path": "../helpers" },
+		{ "path": "../http" },
+		{ "path": "../inversify" },
+		{ "path": "../logger" },
+		{ "path": "../logger-pino" },
+		{ "path": "../resiliency" }
+	]
 }

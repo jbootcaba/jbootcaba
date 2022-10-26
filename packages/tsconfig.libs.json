@@ -2,10 +2,12 @@
 	"extends": "../tsconfig.json",
 	"compilerOptions": {
 		"declaration": true,
+		"noEmit": false,
 		"declarationMap": true,
 		"emitDecoratorMetadata": true,
 		"forceConsistentCasingInFileNames": true,
-		"isolatedModules": false,
+		"skipDefaultLibCheck": true,
+		"isolatedModules": true,
 		"skipLibCheck": true,
 		"moduleResolution": "node",
 		"preserveWatchOutput": true,

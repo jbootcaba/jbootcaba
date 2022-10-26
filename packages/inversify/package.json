@@ -21,9 +21,10 @@
 		"/dist"
 	],
 	"scripts": {
+		"build:declaration": "tsc --emitDeclarationOnly",
 		"build:clean": "rimraf dist/*",
 		"build:esbuild": "ts-node ./build.ts",
-		"build": "npm-run-all build:clean build:esbuild"
+		"build": "npm-run-all build:clean build:esbuild build:declaration"
 	},
 	"dependencies": {
 		"@jbootcaba/config": "*",

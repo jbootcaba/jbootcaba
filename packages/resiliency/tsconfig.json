@@ -1,11 +1,11 @@
 {
-	"extends": "../tsconfig.libs.json",
-	"typeRoots": ["./src/@types", "node_modules/@types", "node"],
+	"extends": "../../tsconfig.json",
 	"compilerOptions": {
 		"outDir": "dist",
-		"rootDir": "src",
-		"baseUrl": "./"
+		"declarationDir": "./dist/types",
+		"baseUrl": "./src"
 	},
+	"typeRoots": ["./src/@types", "node_modules/@types", "node"],
 	"include": ["src/**/*"],
 	"exclude": ["node_modules", "**/__tests__/*", "**/__e2e__/*"]
 }
