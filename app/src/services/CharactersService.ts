@@ -1,7 +1,7 @@
-import { logger, provideSingleton } from "@jbootcaba/inversify";
-import { ILogger } from "@jbootcaba/core";
-import { Api } from "@jbootcaba/http";
-import { CharacterApi } from "../utils/decorators";
+import { logger, provideSingleton } from "jbootcaba/inversify";
+import { ILogger } from "jbootcaba/core";
+import { Api } from "jbootcaba/http";
+import { CharacterApi } from "@utils/decorators";
 import { Result } from "type-result";
 
 export interface Character {

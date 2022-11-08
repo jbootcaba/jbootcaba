@@ -1,4 +1,4 @@
-import { ContextManager, IContextManager } from "@jbootcaba/context";
+import { ContextManager, IContextManager } from "jbootcaba/context";
 import { Request, Response } from "express";
 
 export const cacheKey = "cache-control";

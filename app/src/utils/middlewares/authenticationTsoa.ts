@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { Request } from "express";
-import { container } from "@jbootcaba/inversify";
+import { container } from "jbootcaba/inversify";
 import { AuthService } from "../../services/AuthService";
 import { IUser } from "../../IUser";
 

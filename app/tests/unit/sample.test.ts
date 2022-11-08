@@ -1,8 +1,8 @@
-import { Api } from "@jbootcaba/http";
-import { CreateResiliencyConfig } from "@jbootcaba/resiliency";
+import { Api } from "jbootcaba/http";
+import { CreateResiliencyConfig } from "jbootcaba/resiliency";
 import { createMock } from "ts-auto-mock";
-import { ILogger } from "@jbootcaba/core";
-import { ContextManager } from "@jbootcaba/context";
+import { ILogger } from "jbootcaba/core";
+import { ContextManager } from "jbootcaba/context";
 
 describe("Example - unit Test", () => {
 	beforeEach(() => {

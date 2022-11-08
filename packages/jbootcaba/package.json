@@ -1,0 +1,93 @@
+{
+	"name": "jbootcaba",
+	"version": "1.0.0",
+	"main": "src/index.ts",
+	"types": "src/index.ts",
+	"license": "MIT",
+	"exports": {
+		"./*": {
+			"default": {
+				"require": "./dist/index.js",
+				"default": "./dist/index.js"
+			}
+		}
+	},
+	"typesVersions": {
+		"*": {
+			"*": [
+				"./src/index.ts"
+			],
+			"config": [
+				"./src/jbconfig/index.ts"
+			],
+			"context": [
+				"./src/jbcontext/index.ts"
+			],
+			"core": [
+				"./src/jbcore/index.ts"
+			],
+			"express": [
+				"./src/jbexpress/index.ts"
+			],
+			"helpers": [
+				"./src/jbhelpers/index.ts"
+			],
+			"http": [
+				"./src/jbhttp/index.ts"
+			],
+			"inversify": [
+				"./src/jbinversify/index.ts"
+			],
+			"logger": [
+				"./src/jblogger/index.ts"
+			],
+			"pino": [
+				"./src/jbpino/index.ts"
+			],
+			"resiliency": [
+				"./src/jbresiliency/index.ts"
+			]
+		}
+	},
+	"files": [
+		"/dist"
+	],
+	"scripts": {
+		"build:declaration": "tsc --emitDeclarationOnly",
+		"build:clean": "rimraf dist/*",
+		"build:esbuild": "ts-node ./build.ts",
+		"build": "npm-run-all build:clean build:esbuild build:declaration"
+	},
+	"dependencies": {
+		"@opentelemetry/api": "^1.2.0",
+		"@opentelemetry/api-metrics": "^0.33.0",
+		"@opentelemetry/resources": "^1.7.0",
+		"@opentelemetry/sdk-metrics-base": "^0.31.0",
+		"@opentelemetry/semantic-conventions": "^1.7.0",
+		"axios": "^0.27.2",
+		"cls-hooked": "^4.2.2",
+		"cockatiel": "^3.0.0",
+		"dotenv": "^16.0.3",
+		"express": "^4.18.2",
+		"http-terminator": "^3.2.0",
+		"inversify": "^6.0.1",
+		"inversify-binding-decorators": "^4.0.0",
+		"joi": "^17.7.0",
+		"lightship": "^7.1.0",
+		"lodash": "^4.17.21",
+		"morgan": "^1.10.0",
+		"pino": "^8.7.0",
+		"pino-elasticsearch": "^6.3.0",
+		"pino-pretty": "^9.1.1",
+		"response-time": "^2.3.2",
+		"type-fest": "^3.2.0",
+		"typescript": "^4.8.4"
+	},
+	"devDependencies": {
+		"@esbuild-plugins/tsconfig-paths": "^0.0.4",
+		"@yarnpkg/esbuild-plugin-pnp": "^3.0.0-rc.15",
+		"esbuild": "^0.15.13",
+		"esbuild-node-externals": "^1.5.0",
+		"ts-node": "^10.9.1"
+	}
+}

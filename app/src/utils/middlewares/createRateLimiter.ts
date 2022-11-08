@@ -1,4 +1,4 @@
-import { Configuration } from "../../configs/Configuration";
+import { Configuration } from "../../configuration";
 import { Request, Response, NextFunction } from "express";
 import { RateLimiterMemory } from "rate-limiter-flexible";
 import { IncomingMessage, ServerResponse } from "http";

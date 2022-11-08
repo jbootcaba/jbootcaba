@@ -1,5 +1,5 @@
-import { Configuration } from "../../configs/Configuration";
-import { expressMetrics } from "@jbootcaba/express";
+import { Configuration } from "../../configuration";
+import { expressMetrics } from "jbootcaba/express";
 import { OTLPMetricExporter } from "@opentelemetry/exporter-metrics-otlp-http";
 import { CompressionAlgorithm } from "@opentelemetry/otlp-exporter-base";
 

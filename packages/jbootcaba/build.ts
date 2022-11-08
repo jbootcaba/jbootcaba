@@ -1,9 +1,14 @@
 import { build } from "esbuild";
 import { pnpPlugin } from "@yarnpkg/esbuild-plugin-pnp";
-import { esbuildDecorators } from "@anatine/esbuild-decorators";
+import { nodeExternalsPlugin } from "esbuild-node-externals";
 
 build({
-	plugins: [pnpPlugin(), esbuildDecorators()],
+	plugins: [
+		pnpPlugin(),
+		nodeExternalsPlugin({
+			packagePath: ["./package.json"],
+		}),
+	],
 	bundle: true,
 	entryPoints: ["src/index.ts"],
 	// external: ["aws-sdk", "mock-aws-s3", "testcontainers"], // mock-aws-s3 from s3 template, testcontainers from dynamodb template
@@ -11,7 +16,6 @@ build({
 	format: "cjs",
 	platform: "node",
 	target: "node16.0",
-	keepNames: true,
 	sourcemap: true,
 	outfile: "dist/index.js",
 }).catch((e) => {

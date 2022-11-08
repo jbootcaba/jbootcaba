@@ -1,6 +1,6 @@
 import { Resolver, Arg, Authorized, Query } from "type-graphql";
 import { FindCharacterArgs, CharacterDTO } from "./Contracts";
-import { provideSingleton } from "@jbootcaba/inversify";
+import { provideSingleton } from "jbootcaba/inversify";
 import { NotFoundError } from "./NotFoundError";
 import { CharactersService } from "@services/CharactersService";
 

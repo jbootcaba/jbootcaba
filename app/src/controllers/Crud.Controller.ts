@@ -10,10 +10,10 @@ import {
 	Security,
 } from "tsoa";
 import { inject } from "inversify";
-import { ILogger } from "@jbootcaba/core";
-import { config, logger, provideSingleton } from "@jbootcaba/inversify";
+import { ILogger } from "jbootcaba/core";
+import { config, logger, provideSingleton } from "jbootcaba/inversify";
 import { Character, CharactersService } from "../services/CharactersService";
-import { Configuration } from "../configs/Configuration";
+import { Configuration } from "../configuration";
 
 @Route("characters")
 @provideSingleton(UsersController)

@@ -3,7 +3,7 @@ import { trace, Tracer } from "@opentelemetry/api";
 import { OTLPTraceExporter } from "@opentelemetry/exporter-trace-otlp-http";
 import { BatchSpanProcessor } from "@opentelemetry/sdk-trace-base";
 import { SemanticResourceAttributes } from "@opentelemetry/semantic-conventions";
-import { Configuration } from "../../configs/Configuration";
+import { Configuration } from "../../configuration";
 import { addIgnoredOutgoingRequests, provider } from "./instrumentation";
 import { CompressionAlgorithm } from "@opentelemetry/otlp-exporter-base";
 import { NodeTracerProvider } from "@opentelemetry/sdk-trace-node";

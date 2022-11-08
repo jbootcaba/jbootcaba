@@ -1,8 +1,8 @@
 import { Request } from "express";
-import { Configuration } from "../configs/Configuration";
+import { Configuration } from "../configuration";
 import { isAfter, addMinutes, parseISO } from "date-fns";
 import { IUser } from "../IUser";
-import { config, provideSingleton } from "jbootcaba/logger";
+import { config, provideSingleton } from "jbootcaba/inversify";
 import { container } from "jbootcaba/inversify";
 import { injectable, interfaces } from "inversify";
 import jwt from "jsonwebtoken";

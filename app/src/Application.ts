@@ -12,12 +12,12 @@ import {
 	HttpServer,
 } from "jbootcaba/express";
 import { Express } from "express";
-import { LoggerFactory } from "jbootcaba/logger";
+import { LoggerFactory } from "jbootcaba/inversify";
 import { GraphQlRegister } from "./utils/graphql/RegisterGraphql";
 import { RegisterDocs } from "./docs";
 import { TYPES } from "./utils/TYPES";
 import { RegisterRoutes } from "./routes/routes";
-import { Configuration } from "./configs/Configuration";
+import { Configuration } from "./configuration";
 import "./controllers";
 import {
 	createRateLimiter,
@@ -46,13 +46,13 @@ export const BuildApplication = async (
 	application
 		.use(logMiddleware(logger))
 		.use(createHelmet(config))
-		.use(<any>createRateLimiter(config))
+		.use(createRateLimiter(config))
 		.use(compression())
 		.use(cors())
 		.use(bodyParser.urlencoded({ extended: true }))
 		.use(bodyParser.json())
-		.use(<any>createContextMiddleware(ContextFiller))
-		.use(<any>CorrelationId);
+		.use(createContextMiddleware(ContextFiller))
+		.use(CorrelationId);
 
 	RegisterDocs(application);
 	RegisterRoutes(application);

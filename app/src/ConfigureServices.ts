@@ -1,10 +1,11 @@
 import { Container, decorate, injectable } from "inversify";
 import { buildProviderModule } from "inversify-binding-decorators";
 import { Controller } from "tsoa";
-import { Configuration } from "./configs/Configuration";
-import { TYPES } from "./utils/TYPES";
-import { registerTracer } from "./utils/tracer/tracer";
+import { Configuration } from "@config";
+import { Identifiers } from "@utils/decorators";
+import { registerTracer } from "@utils/tracer/tracer";
 import { ApiContainerModule } from "jbootcaba/helpers";
+import { TYPES } from "jbootcaba/inversify";
 
 export const ConfigureServices = async (
 	container: Container
@@ -19,7 +20,7 @@ export const ConfigureServices = async (
 	container.load(buildProviderModule());
 	await container.loadAsync(
 		ApiContainerModule({
-			identifier: TYPES.CHARACTERS_API,
+			identifier: Identifiers.CHARACTER_API,
 			endpoint: `${config.API_GATEWAY_URL}/character-service`,
 		})
 	);

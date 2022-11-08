@@ -1,51 +1,56 @@
 {
-	"name": "jbootcaba",
-	"private": true,
-	"version": "1.0.0",
-	"main": "index.js",
-	"license": "MIT",
-	"scripts": {
-		"prepare": "husky install",
-		"format:staged": "git-format-staged --formatter 'prettier-eslint --stdin-filepath \"{}\"' '**/*.js' '**/*.jsx' '**/*.ts' .",
-		"test": "lerna run test",
-		"build": "turbo run build",
-		"commit": "git-cz"
-	},
-	"workspaces": [
-		"packages/*",
-		"app"
-	],
-	"devDependencies": {
-		"@commitlint/cli": "^17.1.2",
-		"@commitlint/config-conventional": "^17.1.0",
-		"@release-it/conventional-changelog": "^5.1.0",
-		"commitizen": "^4.2.5",
-		"conventional-changelog-cli": "^2.2.2",
-		"cz-conventional-changelog": "3.3.0",
-		"eslint": "^8.24.0",
-		"eslint-config-prettier": "^8.5.0",
-		"eslint-config-standard": "^17.0.0",
-		"eslint-plugin-import": "^2.26.0",
-		"eslint-plugin-node": "^11.1.0",
-		"eslint-plugin-prettier": "^4.2.1",
-		"eslint-plugin-promise": "^6.0.1",
-		"git-cz": "^4.9.0",
-		"git-format-staged": "^3.0.0",
-		"husky": "^8.0.1",
-		"jest": "^29.1.2",
-		"lerna": "^5.6.1",
-		"prettier": "^2.7.1",
-		"prettier-eslint": "^15.0.1",
-		"prettier-eslint-cli": "^7.1.0",
-		"release-it": "^15.5.0",
-		"standard-version": "^9.5.0",
-		"ts-jest": "^29.0.3",
-		"typescript": "^4.8.4"
-	},
-	"config": {
-		"commitizen": {
-			"path": "./node_modules/cz-conventional-changelog"
-		}
-	},
-	"packageManager": "yarn@1.22.19"
+  "name": "jbootcaba",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "prepare": "husky install",
+    "format:staged": "git-format-staged --formatter 'prettier-eslint --stdin-filepath \"{}\"' '**/*.js' '**/*.jsx' '**/*.ts' .",
+    "test": "lerna run test",
+    "build": "turbo run build",
+    "commit": "git-cz"
+  },
+  "workspaces": [
+    "packages/*",
+    "app"
+  ],
+  "devDependencies": {
+    "@auto-it/conventional-commits": "^10.37.6",
+    "@auto-it/npm": "^10.37.6",
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "@release-it/conventional-changelog": "^5.1.0",
+    "auto": "^10.37.6",
+    "commitizen": "^4.2.5",
+    "conventional-changelog-cli": "^2.2.2",
+    "cz-conventional-changelog": "3.3.0",
+    "eslint": "^8.24.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.0.1",
+    "git-cz": "^4.9.0",
+    "git-format-staged": "^3.0.0",
+    "husky": "^8.0.1",
+    "jest": "^29.1.2",
+    "lerna": "^5.6.1",
+    "prettier": "^2.7.1",
+    "prettier-eslint": "^15.0.1",
+    "prettier-eslint-cli": "^7.1.0",
+    "release-it": "^15.5.0",
+    "standard-version": "^9.5.0",
+    "ts-jest": "^29.0.3",
+    "typescript": "^4.8.4"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "packageManager": "yarn@1.22.19",
+  "repository": " / ",
+  "author": "Wladioh <wladioh@gmail.com>"
 }

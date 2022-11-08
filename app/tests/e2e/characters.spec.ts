@@ -4,13 +4,10 @@ import { mockedAxios } from "../mocks/axios.mock";
 // import { marshall } from "@aws-sdk/util-dynamodb";
 import request from "supertest";
 import { BuildApplication } from "../../src/Application";
-import {
-	Configuration,
-	ConfigurationSchema,
-} from "../../src/configs/Configuration";
+import { Configuration, ConfigurationSchema } from "../../src/configuration";
 import { ConfigureServices } from "../../src/ConfigureServices";
 import { when } from "jest-when";
-import { container, StartupBuilder } from "@jbootcaba/inversify";
+import { container, StartupBuilder } from "jbootcaba/inversify";
 import {
 	AuthRulesContext,
 	DecryptTokenRule,

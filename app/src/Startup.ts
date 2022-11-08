@@ -1,9 +1,9 @@
 import "reflect-metadata";
 import "@utils/tracer/instrumentation";
-import { Configuration, ConfigurationSchema } from "./configs/Configuration";
+import { Configuration, ConfigurationSchema } from "./configuration";
 import { StartupBuilder } from "jbootcaba/inversify";
 import { RunApplication } from "./Application";
-import { PinoAdapterBuilder } from "jbootcaba/logger-pino";
+import { PinoAdapterBuilder } from "jbootcaba/pino";
 import { context, isSpanContextValid, trace } from "@opentelemetry/api";
 import "./services/AuthService";
 import { ConfigureServices } from "./ConfigureServices";

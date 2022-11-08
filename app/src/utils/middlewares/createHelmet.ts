@@ -1,5 +1,5 @@
-import { NodeEnv } from "@jbootcaba/config";
-import { Configuration } from "../../configs/Configuration";
+import { NodeEnv } from "jbootcaba/config";
+import { Configuration } from "../../configuration";
 import helmet from "helmet";
 
 export const createHelmet = (config: Configuration) => {
