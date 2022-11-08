@@ -18,34 +18,34 @@
 				"./src/index.ts"
 			],
 			"config": [
-				"./src/jbconfig/index.ts"
+				"./src/@config/index.ts"
 			],
 			"context": [
-				"./src/jbcontext/index.ts"
+				"./src/@context/index.ts"
 			],
 			"core": [
-				"./src/jbcore/index.ts"
+				"./src/@core/index.ts"
 			],
 			"express": [
-				"./src/jbexpress/index.ts"
+				"./src/@express/index.ts"
 			],
 			"helpers": [
-				"./src/jbhelpers/index.ts"
+				"./src/@helpers/index.ts"
 			],
 			"http": [
-				"./src/jbhttp/index.ts"
+				"./src/@http/index.ts"
 			],
 			"inversify": [
-				"./src/jbinversify/index.ts"
+				"./src/@inversify/index.ts"
 			],
 			"logger": [
-				"./src/jblogger/index.ts"
+				"./src/@logger/index.ts"
 			],
 			"pino": [
-				"./src/jbpino/index.ts"
+				"./src/@pino/index.ts"
 			],
 			"resiliency": [
-				"./src/jbresiliency/index.ts"
+				"./src/@resiliency/index.ts"
 			]
 		}
 	},

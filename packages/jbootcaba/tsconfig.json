@@ -5,16 +5,16 @@
 		"declarationDir": "./dist/types",
 		"baseUrl": "./src",
 		"paths": {
-			"@jbootcaba/core": ["./jbcore"],
-			"@jbootcaba/config": ["./jbconfig"],
-			"@jbootcaba/context": ["./jbcontext"],
-			"@jbootcaba/express": ["./jbexpress"],
-			"@jbootcaba/helpers": ["./jbhelpers"],
-			"@jbootcaba/http": ["./jbhttp"],
-			"@jbootcaba/inversify": ["./jbinversify"],
-			"@jbootcaba/logger": ["./jblogger"],
-			"@jbootcaba/pino": ["./jbpino"],
-			"@jbootcaba/resiliency": ["./jbresiliency"]
+			"@jbootcaba/core": ["./@core"],
+			"@jbootcaba/config": ["./@config"],
+			"@jbootcaba/context": ["./@context"],
+			"@jbootcaba/express": ["./@express"],
+			"@jbootcaba/helpers": ["./@helpers"],
+			"@jbootcaba/http": ["./@http"],
+			"@jbootcaba/inversify": ["./@inversify"],
+			"@jbootcaba/logger": ["./@logger"],
+			"@jbootcaba/pino": ["./@pino"],
+			"@jbootcaba/resiliency": ["./@resiliency"]
 		}
 	},
 	"include": ["src/**/*", "./package.json"],

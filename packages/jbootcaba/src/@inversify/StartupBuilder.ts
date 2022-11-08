@@ -7,7 +7,7 @@ import {
 	ConfigurationBuilder,
 	DotEnvProvider,
 	IConfigurationBuilder,
-} from "@jbootcaba/config";
+} from "@config";
 import { ILogger, LoggerManager, ILoggerAdapter } from "@jbootcaba/logger";
 import { TYPES } from "./TYPES";
 import { container } from "./Container";
